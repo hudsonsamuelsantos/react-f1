@@ -1,9 +1,12 @@
 import './App.css'
+import { Timeline } from './pages/Timeline'
 
-export function App() {
+function App() {
   return (
     <div>
-
+      <Timeline />
     </div>
   )
 }
+
+export default App

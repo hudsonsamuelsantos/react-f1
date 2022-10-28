@@ -1,0 +1,13 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 80px;
+    gap: 624px;
+
+    position: relative;
+    width: 1280px;
+    height: 104px;
+
+    background: #FA1E01;
+}
