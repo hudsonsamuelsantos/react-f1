@@ -1,9 +1,9 @@
-import './App.css'
-import { Timeline } from './pages/Timeline'
+import "./App.css"
+import { Timeline } from "./pages/Timeline"
 
 function App() {
   return (
-    <div>
+    <div className="Container">
       <Timeline />
     </div>
   )
