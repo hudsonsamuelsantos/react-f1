@@ -1,12 +1,14 @@
 import styles from "./Timeline.module.css"
-import { NavBar } from "../components/NavBar"
+import { Header } from "../components/Header"
 
 export function Timeline() {
     return (
         <div className={styles.Timeline}>
-            <nav>
-                <NavBar />
-            </nav>
+            <header>
+                <nav>
+                    <Header />
+                </nav>
+            </header>
         </div>
     )
 }

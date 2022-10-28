@@ -1,10 +1,10 @@
-import styles from "./NavBar.module.css"
+import styles from "./Header.module.css"
 import { Buttons } from "./Buttons"
 import { LogoWhite } from "./LogoWhite"
 
-export function NavBar() {
+export function Header() {
     return (
-        <div className={styles.NavBar}>
+        <div className={styles.Header}>
             <LogoWhite />
             <Buttons />
         </div>
