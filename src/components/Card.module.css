@@ -1,0 +1,257 @@
+.Card {
+    width: 352px;
+    height: 404px;
+
+    position: relative;
+}
+
+.Card:hover .CardContentBox::before {
+    content: '';
+
+    height: 408px;
+    width: 258px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 26.7%;
+    right: 0%;
+    top: -0.99%;
+    bottom: 0%;
+
+    border-width: 2px 2px 0px 0px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 0px 10px;
+}
+
+.Card:hover .CardTitle {
+    position: absolute;
+    left: 0.28%;
+    right: 76.7%;
+    top: -3.96%;
+    bottom: 96.29%;
+
+    width: 81px;
+    height: 30px;
+
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EA3323;
+}
+
+.CardTitle {
+    position: absolute;
+    left: 0.28%;
+    right: 76.7%;
+    top: 0%;
+    bottom: 92.57%;
+
+    width: 81px;
+    height: 30px;
+
+    font-family: 'Titillium Web';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #EA3323;
+
+    transition: 100ms;
+}
+
+.CardContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34.5px;
+
+    width: 342px;
+    height: 355px;
+}
+
+.CardContentBox::before {
+    content: '';
+
+    height: 392px;
+    width: 258px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 26.7%;
+    right: 0%;
+    top: 2.97%;
+    bottom: 0%;
+    z-index: auto;
+
+    border-width: 2px 2px 0px 0px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 0px 10px;
+
+    transition: 100ms;
+}
+
+.CardContentText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+
+    width: 342px;
+    height: 203px;
+}
+
+.CardDateAndCountryBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 342px;
+    height: 80px;
+}
+
+.DaysAndCountry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+
+    width: 342px;
+    height: 40px;
+}
+
+.Days {
+    height: 40px;
+
+    font-family: 'Orbitron';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #000000;
+}
+
+.MounthBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+
+    width: 342px;
+    height: 36px;
+}
+
+.Mounth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 67px;
+    height: 36px;
+
+    background: #000000;
+    border-radius: 5px;
+
+    font-family: 'Orbitron';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.CardDescriptionBox::before {
+    content: '';
+
+    width: 342px;
+    height: 1px;
+
+    margin-bottom: 10px;
+
+    background: #D9D9D9;
+}
+
+.CardDescriptionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 342px;
+    height: 113px;
+}
+
+.CardDescriptionBox::after {
+    content: '';
+
+    width: 342px;
+    height: 1px;
+
+    margin-top: 10px;
+
+    background: #D9D9D9;
+}
+
+.CountryNameBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    height: 28px;
+}
+
+.CountryName {
+    height: 28px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.ChevronRightIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+}
+
+.Description {
+    width: 342px;
+    height: 60px;
+
+    margin-top: 3px;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.CardImageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px;
+
+    width: 342px;
+    height: 142px;
+
+    border-radius: 5px;
+}
