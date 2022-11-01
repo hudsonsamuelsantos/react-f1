@@ -1,0 +1,56 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 188px;
+    height: 351px;
+
+    border-right: 1px solid rgba(177, 177, 177, 0.6);
+}
+
+.CountryBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 94px;
+}
+
+.CountryName {
+    height: 37px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+
+    color: #787878;
+}
+
+.Day {
+    height: 60px;
+
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #000000;
+}
+
+.Mounth {
+    height: 37px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+
+    color: #787878;
+}

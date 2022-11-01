@@ -1,6 +1,7 @@
 import styles from "./Timeline.module.css"
 import { Header } from "../components/Header"
 import { Card } from "../components/Card"
+import { CalendarCard } from "../components/CalendarCard"
 
 export function Timeline() {
     return (
@@ -111,6 +112,17 @@ export function Timeline() {
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
                     />
+                </div>
+
+                <div className={styles.CalendarBox}>
+                    <div className={styles.Calendar}>
+                        <CalendarCard
+                            countryImage="src/assets/bahrain_70_x_47.png"
+                            countryName="BAHRAIN"
+                            day="10"
+                            mounth="APR"
+                        />
+                    </div>
                 </div>
             </main>
         </div>

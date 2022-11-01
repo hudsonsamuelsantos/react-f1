@@ -83,3 +83,33 @@
     width: 1120px;
     height: 404px;
 }
+
+.CalendarBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 70px;
+
+    width: 1220px;
+    height: 351px;
+}
+
+.Calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 1880px;
+    height: 351px;
+    overflow-x: scroll;
+
+    scrollbar-width: none;
+    /* ParaFirefox */
+    -ms-overflow-style: none;
+    /* Para Internet Explorer e Edge */
+}
+
+.Calendar::-webkit-scrollbar {
+    width: 0px;
+    /* Para Chrome, Safari, e Opera */
+}
