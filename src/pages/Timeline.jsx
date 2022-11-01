@@ -40,6 +40,13 @@ export function Timeline() {
                         mounth="MAY"
                         description="FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2022"
                         isWithPilots
+                        firstPilotImage="src/assets/max_verstappen_md.png"
+                        secondPilotImage="src/assets/segio_perez_sm.png"
+                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotNameAbbreviation="VER"
+                        secondPilotNameAbbreviation="POR"
+                        thirdPilotNameAbbreviation="LEC"
+
                     />
                     <Card
                         title="ROUND 1"
@@ -49,6 +56,12 @@ export function Timeline() {
                         mounth="MAY"
                         description="FORMULA 1 PIRELLI GRAN PREMIO DE ESPAÑA 2022"
                         isWithPilots
+                        firstPilotImage="src/assets/max_verstappen_md.png"
+                        secondPilotImage="src/assets/segio_perez_sm.png"
+                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotNameAbbreviation="VER"
+                        secondPilotNameAbbreviation="POR"
+                        thirdPilotNameAbbreviation="LEC"
                     />
                 </div>
 
@@ -60,6 +73,13 @@ export function Timeline() {
                         countryName="France"
                         mounth="JUL"
                         description="FORMULA 1 LENOVO GRAND PRIX DE FRANCE 2022"
+                        isWithPilots
+                        firstPilotImage="src/assets/max_verstappen_md.png"
+                        secondPilotImage="src/assets/segio_perez_sm.png"
+                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotNameAbbreviation="VER"
+                        secondPilotNameAbbreviation="POR"
+                        thirdPilotNameAbbreviation="LEC"
                     />
                     <Card
                         title="ROUND 1"
@@ -69,6 +89,12 @@ export function Timeline() {
                         mounth="AUG"
                         description="FORMULA 1 ROLEX BELGIAN GRAND PRIX 2022"
                         isWithPilots
+                        firstPilotImage="src/assets/max_verstappen_md.png"
+                        secondPilotImage="src/assets/segio_perez_sm.png"
+                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotNameAbbreviation="VER"
+                        secondPilotNameAbbreviation="POR"
+                        thirdPilotNameAbbreviation="LEC"
                     />
                     <Card
                         title="ROUND 1"
@@ -78,6 +104,12 @@ export function Timeline() {
                         mounth="SEP"
                         description="FORMULA 1 PIRELLI GRAN PREMIO D&#8217;ITALIA 2022"
                         isWithPilots
+                        firstPilotImage="src/assets/max_verstappen_md.png"
+                        secondPilotImage="src/assets/segio_perez_sm.png"
+                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotNameAbbreviation="VER"
+                        secondPilotNameAbbreviation="POR"
+                        thirdPilotNameAbbreviation="LEC"
                     />
                 </div>
             </main>

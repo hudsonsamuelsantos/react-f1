@@ -3,11 +3,11 @@ import styles from "./Card.module.css"
 export function Card(props) {
     return (
         <div className={styles.Card}>
-            <span className={styles.CardTitle}>
+            <span className={props.isWithPilots ? styles.CardWithPilotsTitle : styles.CardWithoutPilotsTitle}>
                 {props.title}
             </span>
 
-            <div className={styles.CardContentBox}>
+            <div className={props.isWithPilots ? styles.CardWithPilotsContentBox : styles.CardWithoutPilotsContentBox}>
                 <div className={styles.CardContentText}>
                     <div className={styles.CardDateAndCountryBox}>
                         <div className={styles.DaysAndCountry}>
@@ -42,7 +42,58 @@ export function Card(props) {
                 </div>
 
                 {props.isWithPilots
-                    ? <div>com pilotos</div>
+                    ? <div className={styles.CardPilotsBox}>
+                        <div className={styles.SecondPilotBox}>
+                            <img src={props.secondPilotImage} className={styles.SmallPilotImage} />
+
+                            <div className={styles.SecondPilotInfo}>
+                                <span className={styles.PilotNameAbbreviation}>
+                                    <div className={styles.PositionRetactanglesBox}>
+                                        <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                        <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                    </div>
+
+                                    {props.secondPilotNameAbbreviation}
+                                </span>
+                            </div>
+
+                            <img src="src/assets/card_pilot_background_small.png" className={styles.SmallCardPilotBackground} />
+                        </div>
+
+                        <div className={styles.FirstPilotBox}>
+                            <img src={props.firstPilotImage} className={styles.LargePilotImage} />
+
+                            <div className={styles.FirstPilotInfo}>
+                                <div className={styles.PositionRetactanglesBox}>
+                                    <img src="src/assets/rectangle_blue.png" className={styles.PositionRetactangles} />
+                                </div>
+
+                                <span className={styles.PilotNameAbbreviation}>
+                                    {props.firstPilotNameAbbreviation}
+                                </span>
+                            </div>
+
+                            <img src="src/assets/card_pilot_background_large.png" className={styles.LargeCardPilotBackground} />
+                        </div>
+
+                        <div className={styles.ThirdPilotBox}>
+                            <img src={props.thirdPilotImage} className={styles.SmallPilotImage} />
+
+                            <div className={styles.ThirdPilotInfo}>
+                                <div className={styles.PositionRetactanglesBox}>
+                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                </div>
+
+                                <span className={styles.PilotNameAbbreviation}>
+                                    {props.thirdPilotNameAbbreviation}
+                                </span>
+                            </div>
+
+                            <img src="src/assets/card_pilot_background_small.png" className={styles.SmallCardPilotBackground} />
+                        </div>
+                    </div>
 
                     : <div className={styles.CardImageBox}>
                         <img src="src/assets/card-image-car.png" />
