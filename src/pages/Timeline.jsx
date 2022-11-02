@@ -33,6 +33,7 @@ export function Timeline() {
                         mounth="APR"
                         description="FORMULA 1 ARAMCO PRE-SEASON TESTING 2022"
                     />
+
                     <Card
                         title="ROUND 1"
                         days="20 - 22"
@@ -49,6 +50,7 @@ export function Timeline() {
                         thirdPilotNameAbbreviation="LEC"
 
                     />
+
                     <Card
                         title="ROUND 1"
                         days="24 - 26"
@@ -82,6 +84,7 @@ export function Timeline() {
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
                     />
+
                     <Card
                         title="ROUND 1"
                         days="28 - 30"
@@ -97,6 +100,7 @@ export function Timeline() {
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
                     />
+
                     <Card
                         title="ROUND 1"
                         days="04 - 06"
@@ -121,6 +125,69 @@ export function Timeline() {
                             countryName="BAHRAIN"
                             day="10"
                             mounth="APR"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/bahrain_70_x_47.png"
+                            countryName="BAHRAIN"
+                            day="20"
+                            mounth="APR"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/spain_70_x_47.png"
+                            countryName="SPAIN"
+                            day="24"
+                            mounth="MAY"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/france_70_x_47.png"
+                            countryName="FRANCE"
+                            day="31"
+                            mounth="JUL"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/belgium_70_x_47.png"
+                            countryName="BELGIUM"
+                            day="28"
+                            mounth="AUG"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/italy_70_x_47.png"
+                            countryName="ITALY"
+                            day="04"
+                            mounth="SEP"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/japan_70_x_47.png"
+                            countryName="JAPAN"
+                            day="11"
+                            mounth="SEP"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/eua_70_x_47.png"
+                            countryName="EUA"
+                            day="13"
+                            mounth="SEP"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/austria_70_x_47.png"
+                            countryName="AUSTRIA"
+                            day="21"
+                            mounth="SEP"
+                        />
+
+                        <CalendarCard
+                            countryImage="src/assets/saudi_arabia_70_x_47.png"
+                            countryName="SAUDI ARABIA"
+                            day="27"
+                            mounth="SEP"
                         />
                     </div>
                 </div>

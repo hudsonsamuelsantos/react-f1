@@ -91,7 +91,12 @@
     margin-top: 70px;
 
     width: 1220px;
-    height: 351px;
+
+    overflow-x: scroll;
+    overflow: hidden;
+
+    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .Calendar {
@@ -101,15 +106,4 @@
 
     width: 1880px;
     height: 351px;
-    overflow-x: scroll;
-
-    scrollbar-width: none;
-    /* ParaFirefox */
-    -ms-overflow-style: none;
-    /* Para Internet Explorer e Edge */
-}
-
-.Calendar::-webkit-scrollbar {
-    width: 0px;
-    /* Para Chrome, Safari, e Opera */
 }
