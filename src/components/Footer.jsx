@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css"
+import { NavLink } from "react-router-dom"
 
 export function Footer() {
     return (
@@ -7,17 +8,17 @@ export function Footer() {
                 <img src="src/assets/logo_red.png" className={styles.Logo} />
 
                 <div className={styles.Buttons}>
-                    <a href="#" className={styles.Link}>
+                    <NavLink to={"/timeline"} className={({ isActive }) => (isActive ? styles.Active : styles.Link)}>
                         <span className={styles.LinkText}>
                             Cronograma
                         </span>
-                    </a>
+                    </NavLink>
 
-                    <a href="#" className={styles.Link}>
+                    <NavLink to={"/classification"} className={({ isActive }) => (isActive ? styles.Active : styles.Link)}>
                         <span className={styles.LinkText}>
                             Classificação
                         </span>
-                    </a>
+                    </NavLink>
                 </div>
             </nav>
 
