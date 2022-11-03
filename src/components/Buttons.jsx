@@ -1,18 +1,19 @@
 import styles from "./Buttons.module.css"
+import { NavLink } from 'react-router-dom'
 
 export function Buttons() {
     return (
         <div className={styles.Buttons}>
-            <a href="#" className={styles.Link}>
+            <NavLink to={"/timeline"} className={({ isActive }) => (isActive ? styles.Active : styles.Link)}>
                 <span className={styles.Text}>
                     Cronograma
                 </span>
-            </a>
-            <a href="#" className={styles.Link}>
+            </NavLink>
+            <NavLink to={"/classification"} className={({ isActive }) => (isActive ? styles.Active : styles.Link)}>
                 <span className={styles.Text}>
                     Classificação
                 </span>
-            </a>
+            </NavLink>
         </div>
     )
 }
