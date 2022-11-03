@@ -2,6 +2,7 @@ import styles from "./Timeline.module.css"
 import { Header } from "../components/Header"
 import { Card } from "../components/Card"
 import { CalendarCard } from "../components/CalendarCard"
+import { Footer } from "../components/Footer"
 
 export function Timeline() {
     return (
@@ -192,6 +193,10 @@ export function Timeline() {
                     </div>
                 </div>
             </main>
+
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }
