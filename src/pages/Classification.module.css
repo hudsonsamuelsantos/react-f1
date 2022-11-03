@@ -1,0 +1,32 @@
+.Classification {
+    width: 1280px;
+    height: 1639px;
+
+    background: #F3F3F3;
+}
+
+.ClassificationBackground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2px;
+    padding-top: 70px;
+
+    width: 1280px;
+    height: 357px;
+
+    background: linear-gradient(90deg, #2A2A35 1.02%, #505063 51.48%, #2A2A35 100%);
+}
+
+.ClassificationTitle {
+    width: 633px;
+    height: 60px;
+
+    font-family: 'Orbitron';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #F3F3F3;
+}
