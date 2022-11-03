@@ -1,5 +1,6 @@
 import styles from "./Classification.module.css"
 import { Header } from "../components/Header"
+import { Podium } from "../components/Podium"
 
 export function Classification() {
     return (
@@ -15,6 +16,10 @@ export function Classification() {
                     </span>
 
                     <img src="src/assets/points_effect.png" />
+                </div>
+
+                <div className={styles.PodiumBox}>
+                    <Podium />
                 </div>
             </main>
         </div>

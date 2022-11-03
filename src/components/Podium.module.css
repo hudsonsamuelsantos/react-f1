@@ -1,0 +1,277 @@
+.Podium {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+
+    width: 1105px;
+    height: 449px;
+}
+
+.SecondPilot {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 323px;
+    height: 414px;
+}
+
+.SecondPilot::after {
+    content: '';
+
+    position: absolute;
+    width: 323px;
+    height: 208px;
+    top: 100px;
+
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.SecondPilot::before {
+    content: '';
+
+    position: absolute;
+    width: 323px;
+    height: 120px;
+    top: 294px;
+
+    background: #4570C0;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}
+
+.SecondPilotRectanglesBox {
+    display: flex;
+    gap: 2px;
+
+    position: absolute;
+    width: 32px;
+    height: 40px;
+    left: 32px;
+    top: 132px;
+
+    z-index: 9999;
+}
+
+.SecondPilotImage {
+    position: relative;
+    width: 308px;
+    height: 308px;
+
+    margin-left: 6px;
+
+    z-index: 9999;
+}
+
+.SecondPilotInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 190px 24px 24px;
+    gap: 10px;
+
+    width: 323px;
+    height: 106px;
+
+    background: #38383E;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}
+
+.PilotNameBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    height: 58px;
+}
+
+.FirstNameAndCountry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+
+    height: 23px;
+}
+
+.FirstName {
+    height: 22px;
+
+    font-family: 'Orbitron';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.LastName {
+    height: 30px;
+
+    font-family: 'Orbitron';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+
+
+    color: #FFFFFF;
+}
+
+.FirstPilot {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 419px;
+    height: 449px;
+}
+
+.FirstPilot::after {
+    content: '';
+
+    position: absolute;
+    width: 419px;
+    height: 231px;
+    top: 112px;
+
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.FirstPilot::before {
+    content: '';
+
+    position: absolute;
+    width: 419px;
+    height: 120px;
+    top: 329px;
+
+    background: #4570C0;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}
+
+.FirstPilotRectanglesBox {
+    display: flex;
+
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    left: 32px;
+    top: 144px;
+
+    z-index: 9999;
+}
+
+.FirstPilotImage {
+    width: 343px;
+    height: 343px;
+
+    margin-left: 75px;
+
+    z-index: 9999;
+}
+
+.FirstPilotInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 198px 24px 24px;
+    gap: 10px;
+
+    width: 419px;
+    height: 106px;
+
+    background: #38383E;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}
+
+.ThirdPilot {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    width: 323px;
+    height: 414px;
+}
+
+.ThirdPilot::after {
+    content: '';
+
+    position: absolute;
+    width: 323px;
+    height: 208px;
+    top: 100px;
+
+    background: #FFFFFF;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ThirdPilot::before {
+    content: '';
+
+    position: absolute;
+    width: 323px;
+    height: 120px;
+    top: 294px;
+
+    background: #FA1E01;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}
+
+.ThirdPilotRectanglesBox {
+    display: flex;
+    gap: 2px;
+
+    position: absolute;
+    width: 49px;
+    height: 40px;
+    left: 32px;
+    top: 132px;
+
+    z-index: 9999;
+}
+
+.ThirdPilotImage {
+    margin-left: 15px;
+
+    width: 308px;
+    height: 308px;
+
+    z-index: 9999;
+}
+
+.ThirdPilotInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 165px 24px 24px;
+    gap: 10px;
+
+    width: 323px;
+    height: 106px;
+
+    background: #38383E;
+    border-radius: 0px 0px 15px 15px;
+
+    z-index: 9999;
+}

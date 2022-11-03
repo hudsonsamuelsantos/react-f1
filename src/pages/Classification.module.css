@@ -30,3 +30,12 @@
 
     color: #F3F3F3;
 }
+
+.PodiumBox {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -207px;
+
+    width: 1280px;
+}
