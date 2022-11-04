@@ -14,7 +14,7 @@ export function Classification() {
                 </nav>
             </header>
 
-            <main>
+            <main className={styles.Main}>
                 <div className={styles.ClassificationBackground}>
                     <span className={styles.ClassificationTitle}>
                         2022 Driver Standings
