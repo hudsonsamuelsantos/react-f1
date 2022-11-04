@@ -1,15 +1,26 @@
 import styles from "./Podium.module.css"
 
+import RectangleBlue from "../assets/rectangle_blue_15_x_40.png"
+import RectangleRed from "../assets/rectangle_red_15_x_40.png"
+
+import SergioPerezLG from "../assets/sergio_perez_lg.png"
+import MaxVerstappenLG from "../assets/max_verstappen_lg.png"
+import CharlesLeclercLG from "../assets/charles_leclerc_lg.png"
+
+import MexicoFlag from "../assets/mexico_34_x_23.png"
+import FranceFlag from "../assets/france_34_x_23.png"
+import PolandFlag from "../assets/poland_34_x_23.png"
+
 export function Podium() {
     return (
         <div className={styles.Podium}>
             <div className={styles.SecondPilot}>
                 <div className={styles.SecondPilotRectanglesBox}>
-                    <img src="src/assets/rectangle_blue_15_x_40.png" />
-                    <img src="src/assets/rectangle_blue_15_x_40.png" />
+                    <img src={RectangleBlue} />
+                    <img src={RectangleBlue} />
                 </div>
 
-                <img src="src/assets/sergio_perez_lg.png" className={styles.SecondPilotImage} />
+                <img src={SergioPerezLG} className={styles.SecondPilotImage} />
 
                 <div className={styles.SecondPilotInfo}>
                     <div className={styles.PilotNameBox}>
@@ -18,7 +29,7 @@ export function Podium() {
                                 Sergio
                             </span>
 
-                            <img src="src/assets/mexico_34_x_23.png" />
+                            <img src={MexicoFlag} />
                         </div>
 
                         <span className={styles.LastName}>
@@ -30,10 +41,10 @@ export function Podium() {
 
             <div className={styles.FirstPilot}>
                 <div className={styles.FirstPilotRectanglesBox}>
-                    <img src="src/assets/rectangle_blue_15_x_40.png" />
+                    <img src={RectangleBlue} />
                 </div>
 
-                <img src="src/assets/max_verstappen_lg.png" className={styles.FirstPilotImage} />
+                <img src={MaxVerstappenLG} className={styles.FirstPilotImage} />
 
                 <div className={styles.FirstPilotInfo}>
                     <div className={styles.PilotNameBox}>
@@ -42,7 +53,7 @@ export function Podium() {
                                 Max
                             </span>
 
-                            <img src="src/assets/france_34_x_23.png" />
+                            <img src={FranceFlag} />
                         </div>
 
                         <span className={styles.LastName}>
@@ -54,12 +65,12 @@ export function Podium() {
 
             <div className={styles.ThirdPilot}>
                 <div className={styles.ThirdPilotRectanglesBox}>
-                    <img src="src/assets/rectangle_red_15_x_40.png" />
-                    <img src="src/assets/rectangle_red_15_x_40.png" />
-                    <img src="src/assets/rectangle_red_15_x_40.png" />
+                    <img src={RectangleRed} />
+                    <img src={RectangleRed} />
+                    <img src={RectangleRed} />
                 </div>
 
-                <img src="src/assets/charles_leclerc_lg.png" className={styles.ThirdPilotImage} />
+                <img src={CharlesLeclercLG} className={styles.ThirdPilotImage} />
 
                 <div className={styles.ThirdPilotInfo}>
                     <div className={styles.PilotNameBox}>
@@ -68,7 +79,7 @@ export function Podium() {
                                 Charles
                             </span>
 
-                            <img src="src/assets/poland_34_x_23.png" />
+                            <img src={PolandFlag} />
                         </div>
 
                         <span className={styles.LastName}>

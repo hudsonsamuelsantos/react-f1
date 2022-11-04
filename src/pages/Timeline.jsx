@@ -1,4 +1,26 @@
 import styles from "./Timeline.module.css"
+
+import BahrainFlag from "../assets/bahrain.png"
+import SpainFlag from "../assets/spain.png"
+import FranceFlag from "../assets/france.png"
+import BelguimFlag from "../assets/belgium.png"
+import ItalyFlag from "../assets/italy.png"
+
+import CalendarBahrainFlag from "../assets/bahrain_70_x_47.png"
+import CalendarSpainFlag from "../assets/spain_70_x_47.png"
+import CalendarFranceFlag from "../assets/france_70_x_47.png"
+import CalendarBelgiumFlag from "../assets/belgium_70_x_47.png"
+import CalendarItalyFlag from "../assets/italy_70_x_47.png"
+import CalendarJapanFlag from "../assets/japan_70_x_47.png"
+import CalendarEuaFlag from "../assets/eua_70_x_47.png"
+import CalendarAustriaFlag from "../assets/austria_70_x_47.png"
+import CalendarSaudiArabiaFlag from "../assets/saudi_arabia_70_x_47.png"
+
+import MaxVerstappenMD from "../assets/max_verstappen_md.png"
+
+import SergioPerezSM from "../assets/segio_perez_sm.png"
+import CharlesLeclercSM from "../assets/charles_leclerc_sm.png"
+
 import { Header } from "../components/Header"
 import { Card } from "../components/Card"
 import { CalendarCard } from "../components/CalendarCard"
@@ -29,7 +51,7 @@ export function Timeline() {
                     <Card
                         title="TESTING"
                         days="10 - 12"
-                        countryImage="src/assets/bahrain.png"
+                        countryImage={BahrainFlag}
                         countryName="Bahrain"
                         mounth="APR"
                         description="FORMULA 1 ARAMCO PRE-SEASON TESTING 2022"
@@ -38,14 +60,14 @@ export function Timeline() {
                     <Card
                         title="ROUND 1"
                         days="20 - 22"
-                        countryImage="src/assets/bahrain.png"
+                        countryImage={BahrainFlag}
                         countryName="Bahrain"
                         mounth="MAY"
                         description="FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2022"
                         isWithPilots
-                        firstPilotImage="src/assets/max_verstappen_md.png"
-                        secondPilotImage="src/assets/segio_perez_sm.png"
-                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotImage={MaxVerstappenMD}
+                        secondPilotImage={SergioPerezSM}
+                        thirdPilotImage={CharlesLeclercSM}
                         firstPilotNameAbbreviation="VER"
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
@@ -55,14 +77,14 @@ export function Timeline() {
                     <Card
                         title="ROUND 1"
                         days="24 - 26"
-                        countryImage="src/assets/spain.png"
+                        countryImage={SpainFlag}
                         countryName="Spain"
                         mounth="MAY"
                         description="FORMULA 1 PIRELLI GRAN PREMIO DE ESPAÑA 2022"
                         isWithPilots
-                        firstPilotImage="src/assets/max_verstappen_md.png"
-                        secondPilotImage="src/assets/segio_perez_sm.png"
-                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotImage={MaxVerstappenMD}
+                        secondPilotImage={SergioPerezSM}
+                        thirdPilotImage={CharlesLeclercSM}
                         firstPilotNameAbbreviation="VER"
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
@@ -73,14 +95,14 @@ export function Timeline() {
                     <Card
                         title="ROUND 1"
                         days="31 - 02"
-                        countryImage="src/assets/france.png"
+                        countryImage={FranceFlag}
                         countryName="France"
                         mounth="JUL"
                         description="FORMULA 1 LENOVO GRAND PRIX DE FRANCE 2022"
                         isWithPilots
-                        firstPilotImage="src/assets/max_verstappen_md.png"
-                        secondPilotImage="src/assets/segio_perez_sm.png"
-                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotImage={MaxVerstappenMD}
+                        secondPilotImage={SergioPerezSM}
+                        thirdPilotImage={CharlesLeclercSM}
                         firstPilotNameAbbreviation="VER"
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
@@ -89,14 +111,14 @@ export function Timeline() {
                     <Card
                         title="ROUND 1"
                         days="28 - 30"
-                        countryImage="src/assets/belgium.png"
+                        countryImage={BelguimFlag}
                         countryName="Belgium"
                         mounth="AUG"
                         description="FORMULA 1 ROLEX BELGIAN GRAND PRIX 2022"
                         isWithPilots
-                        firstPilotImage="src/assets/max_verstappen_md.png"
-                        secondPilotImage="src/assets/segio_perez_sm.png"
-                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotImage={MaxVerstappenMD}
+                        secondPilotImage={SergioPerezSM}
+                        thirdPilotImage={CharlesLeclercSM}
                         firstPilotNameAbbreviation="VER"
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
@@ -105,14 +127,14 @@ export function Timeline() {
                     <Card
                         title="ROUND 1"
                         days="04 - 06"
-                        countryImage="src/assets/italy.png"
+                        countryImage={ItalyFlag}
                         countryName="Italy"
                         mounth="SEP"
                         description="FORMULA 1 PIRELLI GRAN PREMIO D&#8217;ITALIA 2022"
                         isWithPilots
-                        firstPilotImage="src/assets/max_verstappen_md.png"
-                        secondPilotImage="src/assets/segio_perez_sm.png"
-                        thirdPilotImage="src/assets/charles_lecrerc_sm.png"
+                        firstPilotImage={MaxVerstappenMD}
+                        secondPilotImage={SergioPerezSM}
+                        thirdPilotImage={CharlesLeclercSM}
                         firstPilotNameAbbreviation="VER"
                         secondPilotNameAbbreviation="POR"
                         thirdPilotNameAbbreviation="LEC"
@@ -122,70 +144,70 @@ export function Timeline() {
                 <div className={styles.CalendarBox}>
                     <div className={styles.Calendar}>
                         <CalendarCard
-                            countryImage="src/assets/bahrain_70_x_47.png"
+                            countryImage={CalendarBahrainFlag}
                             countryName="BAHRAIN"
                             day="10"
                             mounth="APR"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/bahrain_70_x_47.png"
+                            countryImage={CalendarBahrainFlag}
                             countryName="BAHRAIN"
                             day="20"
                             mounth="APR"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/spain_70_x_47.png"
+                            countryImage={CalendarSpainFlag}
                             countryName="SPAIN"
                             day="24"
                             mounth="MAY"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/france_70_x_47.png"
+                            countryImage={CalendarFranceFlag}
                             countryName="FRANCE"
                             day="31"
                             mounth="JUL"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/belgium_70_x_47.png"
+                            countryImage={CalendarBelgiumFlag}
                             countryName="BELGIUM"
                             day="28"
                             mounth="AUG"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/italy_70_x_47.png"
+                            countryImage={CalendarItalyFlag}
                             countryName="ITALY"
                             day="04"
                             mounth="SEP"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/japan_70_x_47.png"
+                            countryImage={CalendarJapanFlag}
                             countryName="JAPAN"
                             day="11"
                             mounth="SEP"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/eua_70_x_47.png"
+                            countryImage={CalendarEuaFlag}
                             countryName="EUA"
                             day="13"
                             mounth="SEP"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/austria_70_x_47.png"
+                            countryImage={CalendarAustriaFlag}
                             countryName="AUSTRIA"
                             day="21"
                             mounth="SEP"
                         />
 
                         <CalendarCard
-                            countryImage="src/assets/saudi_arabia_70_x_47.png"
+                            countryImage={CalendarSaudiArabiaFlag}
                             countryName="SAUDI ARABIA"
                             day="27"
                             mounth="SEP"

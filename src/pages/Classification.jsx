@@ -1,4 +1,7 @@
 import styles from "./Classification.module.css"
+
+import PointsEffect from "../assets/points_effect.png"
+
 import { Header } from "../components/Header"
 import { Podium } from "../components/Podium"
 
@@ -15,7 +18,7 @@ export function Classification() {
                         2022 Driver Standings
                     </span>
 
-                    <img src="src/assets/points_effect.png" />
+                    <img src={PointsEffect} />
                 </div>
 
                 <div className={styles.PodiumBox}>

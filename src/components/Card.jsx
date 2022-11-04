@@ -1,5 +1,13 @@
 import styles from "./Card.module.css"
 
+import Flag from "../assets/flag.png"
+import ChevronRight from "../assets/chevron_right.png"
+import RectangleRed from "../assets/rectangle_red.png"
+import RectangleBlue from "../assets/rectangle_blue.png"
+import CardPilotBackgroundSmall from "../assets/card_pilot_background_small.png"
+import CardPilotBackgroundLarge from "../assets/card_pilot_background_large.png"
+import CardImageCar from "../assets/card-image-car.png"
+
 export function Card(props) {
     return (
         <div className={styles.Card}>
@@ -21,7 +29,7 @@ export function Card(props) {
                             <span className={styles.Mounth}>
                                 {props.mounth}
                             </span>
-                            <img src="src/assets/flag.png" />
+                            <img src={Flag} />
                         </div>
 
                         <div className={styles.CardDescriptionBox}>
@@ -30,7 +38,7 @@ export function Card(props) {
                                     {props.countryName}
                                 </span>
                                 <div className={styles.ChevronRightIcon}>
-                                    <img src="src/assets/chevron_right.png" />
+                                    <img src={ChevronRight} />
                                 </div>
                             </div>
 
@@ -49,15 +57,15 @@ export function Card(props) {
                             <div className={styles.SecondPilotInfo}>
                                 <span className={styles.PilotNameAbbreviation}>
                                     <div className={styles.PositionRetactanglesBox}>
-                                        <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
-                                        <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                        <img src={RectangleRed} className={styles.PositionRetactangles} />
+                                        <img src={RectangleRed} className={styles.PositionRetactangles} />
                                     </div>
 
                                     {props.secondPilotNameAbbreviation}
                                 </span>
                             </div>
 
-                            <img src="src/assets/card_pilot_background_small.png" className={styles.SmallCardPilotBackground} />
+                            <img src={CardPilotBackgroundSmall} className={styles.SmallCardPilotBackground} />
                         </div>
 
                         <div className={styles.FirstPilotBox}>
@@ -65,7 +73,7 @@ export function Card(props) {
 
                             <div className={styles.FirstPilotInfo}>
                                 <div className={styles.PositionRetactanglesBox}>
-                                    <img src="src/assets/rectangle_blue.png" className={styles.PositionRetactangles} />
+                                    <img src={RectangleBlue} className={styles.PositionRetactangles} />
                                 </div>
 
                                 <span className={styles.PilotNameAbbreviation}>
@@ -73,7 +81,7 @@ export function Card(props) {
                                 </span>
                             </div>
 
-                            <img src="src/assets/card_pilot_background_large.png" className={styles.LargeCardPilotBackground} />
+                            <img src={CardPilotBackgroundLarge} className={styles.LargeCardPilotBackground} />
                         </div>
 
                         <div className={styles.ThirdPilotBox}>
@@ -81,9 +89,9 @@ export function Card(props) {
 
                             <div className={styles.ThirdPilotInfo}>
                                 <div className={styles.PositionRetactanglesBox}>
-                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
-                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
-                                    <img src="src/assets/rectangle_red.png" className={styles.PositionRetactangles} />
+                                    <img src={RectangleRed} className={styles.PositionRetactangles} />
+                                    <img src={RectangleRed} className={styles.PositionRetactangles} />
+                                    <img src={RectangleRed} className={styles.PositionRetactangles} />
                                 </div>
 
                                 <span className={styles.PilotNameAbbreviation}>
@@ -91,12 +99,12 @@ export function Card(props) {
                                 </span>
                             </div>
 
-                            <img src="src/assets/card_pilot_background_small.png" className={styles.SmallCardPilotBackground} />
+                            <img src={CardPilotBackgroundSmall} className={styles.SmallCardPilotBackground} />
                         </div>
                     </div>
 
                     : <div className={styles.CardImageBox}>
-                        <img src="src/assets/card-image-car.png" />
+                        <img src={CardImageCar} />
                     </div>
                 }
             </div>
