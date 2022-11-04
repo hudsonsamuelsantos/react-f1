@@ -1,8 +1,9 @@
 .Classification {
-    width: 1280px;
-    height: 1639px;
+    width: 100%;
 
-    background: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ClassificationBackground {

@@ -1,5 +1,14 @@
 .Header {
     display: flex;
+    justify-content: center;
+
+    width: 100vw;
+
+    background: #FA1E01;
+}
+
+.HeaderBox {
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 40px 80px;

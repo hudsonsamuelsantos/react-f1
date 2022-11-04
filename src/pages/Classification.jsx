@@ -9,7 +9,9 @@ export function Classification() {
     return (
         <div className={styles.Classification}>
             <header>
-                <Header />
+                <nav>
+                    <Header />
+                </nav>
             </header>
 
             <main>

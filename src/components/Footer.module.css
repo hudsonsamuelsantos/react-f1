@@ -1,5 +1,17 @@
 .Footer {
     display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 340px;
+
+    margin-top: 167px;
+
+    background: #2F2F2F;
+}
+
+.FooterBox {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -7,8 +19,6 @@
 
     width: 1280px;
     height: 340px;
-
-    margin-top: 167px;
 
     background: #2F2F2F;
 }

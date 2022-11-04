@@ -35,7 +35,7 @@ export function Timeline() {
                 </nav>
             </header>
 
-            <main>
+            <main className={styles.Main}>
                 <div className={styles.TitleAndSubtitleBox}>
                     <div className={styles.TitleBox}>
                         <h1 className={styles.Title}>

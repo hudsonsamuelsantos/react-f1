@@ -1,4 +1,5 @@
 import styles from "./Buttons.module.css"
+
 import { NavLink } from 'react-router-dom'
 
 export function Buttons() {
