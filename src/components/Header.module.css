@@ -2,9 +2,14 @@
     display: flex;
     justify-content: center;
 
+    position: fixed;
     width: 100vw;
+    left: 0;
+    top: 0;
 
     background: #FA1E01;
+
+    z-index: 99999;
 }
 
 .HeaderBox {
