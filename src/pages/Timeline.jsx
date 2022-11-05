@@ -216,7 +216,7 @@ export function Timeline() {
                 </div>
             </main>
 
-            <footer>
+            <footer className={styles.Footer}>
                 <Footer />
             </footer>
         </div>

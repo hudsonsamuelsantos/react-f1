@@ -1,0 +1,222 @@
+.ExpansiveCard {
+    display: flex;
+    flex-direction: column;
+
+    width: 1105px;
+    height: 367px;
+
+    transition: 100ms;
+}
+
+.ExpansiveCardClosed {
+    display: flex;
+    flex-direction: column;
+
+    height: 57px;
+
+    transition: 100ms;
+
+    overflow: hidden;
+}
+
+.TopBar {
+    width: 1105px;
+    height: 57px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.TopBarClosed {
+    width: 1105px;
+    height: 57px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(177, 177, 177, 0.6);
+}
+
+.TopBarPilotInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    height: 37px;
+}
+
+.RankingPosition {
+    height: 36px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+.PilotName {
+    height: 37px;
+
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+.PilotTeam {
+    height: 21px;
+
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #B1B1B1;
+}
+
+.PilotPoints {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+
+    width: 94px;
+    height: 33px;
+}
+
+.PointsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    gap: 10px;
+
+    width: 70px;
+    height: 33px;
+
+    background: #EDEDEC;
+    border-radius: 50px;
+}
+
+.Points {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 50px;
+    height: 21px;
+}
+
+.PointsText {
+    width: 50px;
+    height: 21px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.ChevronRight {
+    width: 20px;
+    height: 20px;
+}
+
+.BottomBar {
+    display: flex;
+
+    width: 1105px;
+    height: 310px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(177, 177, 177, 0.6);
+
+    transition: 100ms;
+}
+
+.BottomBarClosed {
+    display: flex;
+
+    width: 1105px;
+    height: 0px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(177, 177, 177, 0.6);
+
+    transition: 100ms;
+}
+
+.PilotImage {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.BottomBarPilotInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    gap: 10px;
+
+    width: 649px;
+    height: 310px;
+}
+
+.PilotInfoBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 585px;
+    height: 37px;
+}
+
+.PilotInfoBarTitle {
+    height: 37px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+.PilotInfoBarText {
+    height: 30px;
+
+    font-family: 'Titillium Web';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #6F6F6F;
+}
