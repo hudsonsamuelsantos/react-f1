@@ -104,9 +104,6 @@
 
     overflow-x: scroll;
     overflow: hidden;
-
-    overflow-x: scroll;
-    overflow: hidden;
 }
 
 .Calendar {
@@ -115,6 +112,11 @@
     align-items: flex-start;
 
     width: 1880px;
+    height: 351px;
+}
+
+.CalendarSwiperView {
+    width: 1220px;
     height: 351px;
 }
 

@@ -1,5 +1,12 @@
 import styles from "./Timeline.module.css"
 
+import { Swiper, SwiperSlide } from "swiper/react"
+
+import "swiper/css";
+import "swiper/css/scrollbar";
+
+import { Autoplay, Scrollbar } from "swiper"
+
 import BahrainFlag from "../assets/bahrain.png"
 import SpainFlag from "../assets/spain.png"
 import FranceFlag from "../assets/france.png"
@@ -140,85 +147,120 @@ export function Timeline() {
                         thirdPilotNameAbbreviation="LEC"
                     />
                 </div>
-
                 <div className={styles.CalendarBox}>
                     <div className={styles.Calendar}>
-                        <CalendarCard
-                            countryImage={CalendarBahrainFlag}
-                            countryName="BAHRAIN"
-                            day="10"
-                            mounth="APR"
-                        />
+                        <div className={styles.CalendarSwiperView}>
+                            <>
+                                <Swiper
+                                    modules={[Scrollbar, Autoplay]}
+                                    slidesPerView={6.5}
+                                    className="mySwiper"
+                                    spaceBetween={0}
+                                    autoplay={{
+                                        delay: 2800,
+                                        disableOnInteraction: false,
+                                    }}
+                                >
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarBahrainFlag}
+                                            countryName="BAHRAIN"
+                                            day="10"
+                                            mounth="APR"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarBahrainFlag}
-                            countryName="BAHRAIN"
-                            day="20"
-                            mounth="APR"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarBahrainFlag}
+                                            countryName="BAHRAIN"
+                                            day="20"
+                                            mounth="APR"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarSpainFlag}
-                            countryName="SPAIN"
-                            day="24"
-                            mounth="MAY"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarSpainFlag}
+                                            countryName="SPAIN"
+                                            day="24"
+                                            mounth="MAY"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarFranceFlag}
-                            countryName="FRANCE"
-                            day="31"
-                            mounth="JUL"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarFranceFlag}
+                                            countryName="FRANCE"
+                                            day="31"
+                                            mounth="JUL"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarBelgiumFlag}
-                            countryName="BELGIUM"
-                            day="28"
-                            mounth="AUG"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarBelgiumFlag}
+                                            countryName="BELGIUM"
+                                            day="28"
+                                            mounth="AUG"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarItalyFlag}
-                            countryName="ITALY"
-                            day="04"
-                            mounth="SEP"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarItalyFlag}
+                                            countryName="ITALY"
+                                            day="04"
+                                            mounth="SEP"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarJapanFlag}
-                            countryName="JAPAN"
-                            day="11"
-                            mounth="SEP"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarJapanFlag}
+                                            countryName="JAPAN"
+                                            day="11"
+                                            mounth="SEP"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarEuaFlag}
-                            countryName="EUA"
-                            day="13"
-                            mounth="SEP"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarEuaFlag}
+                                            countryName="EUA"
+                                            day="13"
+                                            mounth="SEP"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarAustriaFlag}
-                            countryName="AUSTRIA"
-                            day="21"
-                            mounth="SEP"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarAustriaFlag}
+                                            countryName="AUSTRIA"
+                                            day="21"
+                                            mounth="SEP"
+                                        />
+                                    </SwiperSlide>
 
-                        <CalendarCard
-                            countryImage={CalendarSaudiArabiaFlag}
-                            countryName="SAUDI ARABIA"
-                            day="27"
-                            mounth="SEP"
-                        />
+                                    <SwiperSlide>
+                                        <CalendarCard
+                                            countryImage={CalendarSaudiArabiaFlag}
+                                            countryName="SAUDI ARABIA"
+                                            day="27"
+                                            mounth="SEP"
+                                        />
+                                    </SwiperSlide>
+                                </Swiper>
+                            </>
+                        </div>
                     </div>
                 </div>
-            </main>
+
+            </main >
 
             <footer className={styles.Footer}>
                 <Footer />
             </footer>
-        </div>
+        </div >
     )
 }
