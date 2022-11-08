@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-interactions",
     "storybook-addon-react-router-v6"
   ],
+  "staticDirs": ['../src/assets'],
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-vite"

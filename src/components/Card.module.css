@@ -1,4 +1,7 @@
 .Card {
+    display: flex;
+    flex-direction: column;
+
     width: 352px;
     height: 404px;
 
@@ -81,6 +84,8 @@
     color: #EA3323;
 
     transition: 100ms;
+
+    z-index: 9999;
 }
 
 .Card:hover .CardWithoutPilotsTitle {
