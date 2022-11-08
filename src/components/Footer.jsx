@@ -14,7 +14,7 @@ export function Footer() {
                     <div className={styles.Buttons}>
                         <NavLink to={"/timeline"} className={({ isActive }) => (isActive ? styles.Active : styles.Link)}>
                             <span className={styles.LinkText}>
-                                Cronograma
+                                Cronogramas
                             </span>
                         </NavLink>
 

@@ -121,5 +121,7 @@
 }
 
 .Footer {
+    width: 100vw;
+
     margin-top: 167px;
 }
