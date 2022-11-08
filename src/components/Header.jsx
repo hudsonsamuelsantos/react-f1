@@ -1,13 +1,15 @@
 import styles from "./Header.module.css"
 
+import logoWhite from "../assets/logoWhite.png"
+
 import { Buttons } from "./Buttons"
-import { LogoWhite } from "./LogoWhite"
 
 export function Header() {
     return (
         <div className={styles.Header}>
             <div className={styles.HeaderBox}>
-                <LogoWhite />
+                <img src={logoWhite} />
+
                 <Buttons />
             </div>
         </div>
