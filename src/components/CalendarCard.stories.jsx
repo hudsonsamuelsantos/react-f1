@@ -33,7 +33,7 @@ export default {
                 CalendarSaudiArabiaFlag,
             ],
             control: {
-                type: 'radio'
+                type: "radio"
             },
         }
     }
