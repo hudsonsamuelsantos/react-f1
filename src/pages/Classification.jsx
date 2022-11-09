@@ -14,7 +14,7 @@ import { Footer } from "../components/Footer"
 export function Classification() {
     return (
         <div className={styles.Classification}>
-            <header>
+            <header className={styles.Header}>
                 <nav>
                     <Header />
                 </nav>
