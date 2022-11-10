@@ -1,9 +1,12 @@
 import styles from "./Card.module.css"
 
 import Flag from "../assets/flag.png"
+
 import ChevronRight from "../assets/chevron_right.png"
+
 import RectangleRed from "../assets/rectangle_red.png"
 import RectangleBlue from "../assets/rectangle_blue.png"
+
 import CardPilotBackgroundSmall from "../assets/card_pilot_background_small.png"
 import CardPilotBackgroundLarge from "../assets/card_pilot_background_large.png"
 import CardImageCar from "../assets/card-image-car.png"
