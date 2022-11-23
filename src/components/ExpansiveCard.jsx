@@ -1,33 +1,53 @@
 import styles from "./ExpansiveCard.module.css"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
+import MaxVerstappenExpansiveCardImage from "../assets/max_verstappen_expansive_card.png"
+import SergioPerezExpansiveCardImage from "../assets/sergio_perez_expansive_card.png"
+import CharlesLeclercExpansiveCardImage from "../assets/charles_leclerc_expansive_card.png"
 
 import RectangleBlue from "../assets/rectangle_blue_5_x_19.png"
 import RectangleRed from "../assets/rectangle_red_5_x_19.png"
 
 import ChevronRight from "../assets/chevron_right_20_x_20.png"
 
-export function ExpansiveCard(props) {
+export function ExpansiveCard({ pilotInfo }) {
     const [isOpenCard, setIsOpenCard] = useState(false)
+
+    const pilotsImages = {
+        "Max Verstappen": MaxVerstappenExpansiveCardImage,
+        "Sergio Perez": SergioPerezExpansiveCardImage,
+        "Charles Leclerc": CharlesLeclercExpansiveCardImage
+    }
+
+    const [rectangleColor, setRectangleColor] = useState("")
+
+    useEffect(() => {
+        if (pilotInfo.rankingPosition === "1" || pilotInfo.rankingPosition === "2") {
+            setRectangleColor("blue")
+        }
+    }, [])
+
+    console.log(pilotInfo)
 
     return (
         <div className={isOpenCard ? styles.ExpansiveCard : styles.ExpansiveCardClosed}>
             <div className={isOpenCard ? styles.TopBar : styles.TopBarClosed} onClick={() => setIsOpenCard(!isOpenCard)}>
                 <div className={styles.TopBarPilotInfo}>
                     <span className={styles.RankingPosition}>
-                        {props.rankingPosition}
+                        {pilotInfo.rankingPosition}
                     </span>
 
-                    <img src={props.rectangleColor === "blue" ? RectangleBlue : RectangleRed} />
+                    <img src={rectangleColor === "blue" ? RectangleBlue : RectangleRed} />
 
                     <span className={styles.PilotName}>
-                        {props.firstPilotName}
+                        {pilotInfo.firstPilotName}
 
-                        <strong> {props.lastPilotName}</strong>
+                        <strong> {pilotInfo.lastPilotNameUppercase}</strong>
                     </span>
 
                     <span className={styles.PilotTeam}>
-                        {props.team}
+                        {pilotInfo.team}
                     </span>
                 </div>
 
@@ -35,7 +55,7 @@ export function ExpansiveCard(props) {
                     <div className={styles.PointsBox}>
                         <div className={styles.Points}>
                             <span className={styles.PointsText}>
-                                {`${props.pts} PTS`}
+                                {`${pilotInfo.pts} PTS`}
                             </span>
                         </div>
                     </div>
@@ -45,7 +65,7 @@ export function ExpansiveCard(props) {
             </div>
 
             <div className={isOpenCard ? styles.BottomBar : styles.BottomBarClosed}>
-                <img src={props.pilotImage} className={styles.PilotImage} />
+                <img src={pilotsImages[pilotInfo.name]} className={styles.PilotImage} />
 
                 <div className={styles.BottomBarPilotInfo}>
                     <div className={styles.PilotInfoBar}>
@@ -54,7 +74,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.team}
+                            {pilotInfo.team}
                         </span>
                     </div>
 
@@ -64,7 +84,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.country}
+                            {pilotInfo.country}
                         </span>
                     </div>
 
@@ -74,7 +94,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.podiuns}
+                            {pilotInfo.podiuns}
                         </span>
                     </div>
 
@@ -84,7 +104,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.points}
+                            {pilotInfo.points}
                         </span>
                     </div>
 
@@ -94,7 +114,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.gpEntered}
+                            {pilotInfo.gpEntered}
                         </span>
                     </div>
 
@@ -104,7 +124,7 @@ export function ExpansiveCard(props) {
                         </span>
 
                         <span className={styles.PilotInfoBarText}>
-                            {props.worldChampionships}
+                            {pilotInfo.worldChampionships}
                         </span>
                     </div>
                 </div>

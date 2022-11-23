@@ -1,10 +1,10 @@
 import styles from "./Classification.module.css"
 
-import PointsEffect from "../assets/points_effect.png"
+import { useEffect, useState } from "react"
 
-import MaxVerstappenExpansiveCardImage from "../assets/max_verstappen_expansive_card.png"
-import SergioPerezExpansiveCardImage from "../assets/sergio_perez_expansive_card.png"
-import CharlesLeclercExpansiveCardImage from "../assets/charles_leclerc_expansive_card.png"
+import axios from "axios"
+
+import PointsEffect from "../assets/points_effect.png"
 
 import { Header } from "../components/Header"
 import { Podium } from "../components/Podium"
@@ -12,6 +12,23 @@ import { ExpansiveCard } from "../components/ExpansiveCard"
 import { Footer } from "../components/Footer"
 
 export function Classification() {
+
+    const [pilotsInfo, setPilotsInfo] = useState(null)
+
+    useEffect(() => {
+        async function fetch() {
+            const url = "https://eowieece7a1eri5.m.pipedream.net"
+
+            const response = await axios.get(url)
+
+            setPilotsInfo(response.data.pilotsInfo)
+        }
+
+        fetch()
+    }, [])
+
+    console.log(pilotsInfo)
+
     return (
         <div className={styles.Classification}>
             <header className={styles.Header}>
@@ -34,50 +51,21 @@ export function Classification() {
                 </div>
 
                 <div className={styles.ExpansiveCardsBox}>
-                    <ExpansiveCard
-                        rankingPosition="1"
-                        firstPilotName="Max"
-                        lastPilotName="VERSTAPPEN"
-                        team="Red Bull Racing"
-                        pts="366"
-                        pilotImage={MaxVerstappenExpansiveCardImage}
-                        country="Netherlands"
-                        podiuns="75"
-                        points="1948.5"
-                        gpEntered="160"
-                        worldChampionships="2"
-                        rectangleColor="blue"
-                    />
+                    {pilotsInfo != null && (
+                        <>
+                            <ExpansiveCard
+                                pilotInfo={pilotsInfo.maxVerstappen}
+                            />
 
-                    <ExpansiveCard
-                        rankingPosition="2"
-                        firstPilotName="Sergio"
-                        lastPilotName="PEREZ"
-                        team="Red Bull Racing"
-                        pts="253"
-                        pilotImage={SergioPerezExpansiveCardImage}
-                        country="Mexico"
-                        podiuns="24"
-                        points="1161"
-                        gpEntered="233"
-                        worldChampionships="N/A"
-                        rectangleColor="blue"
-                    />
+                            <ExpansiveCard
+                                pilotInfo={pilotsInfo.sergioPerez}
+                            />
 
-                    <ExpansiveCard
-                        rankingPosition="3"
-                        firstPilotName="Charles"
-                        lastPilotName="LECLERC"
-                        team="Ferrari"
-                        pts="252"
-                        pilotImage={CharlesLeclercExpansiveCardImage}
-                        country="Monaco"
-                        podiuns="23"
-                        points="827"
-                        gpEntered="100"
-                        worldChampionships="N/A"
-                        rectangleColor="red"
-                    />
+                            <ExpansiveCard
+                                pilotInfo={pilotsInfo.charlesLeclerc}
+                            />
+                        </>
+                    )}
                 </div>
             </main>
 
