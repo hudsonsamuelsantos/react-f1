@@ -46,8 +46,6 @@ export function ExpansiveCard({ pilotName }) {
         "Charles Leclerc": CharlesLeclercExpansiveCardImage
     }
 
-    console.log(pilotInfo)
-
     return (
         <>
             {pilotInfo != null && (

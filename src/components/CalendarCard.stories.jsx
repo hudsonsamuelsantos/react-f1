@@ -14,10 +14,11 @@ export default {
     title: "Components/CalendarCard",
     component: CalendarCard,
     args: {
-        countryImage: CalendarBahrainFlag,
-        countryName: "BAHRAIN",
-        day: "10",
-        mounth: "APR",
+        race: {
+            "countryNameUppercase": "DEFAULT",
+            "day": "26",
+            "mounthAbbreviationUppercase": "APR"
+        }
     },
     argTypes: {
         countryImage: {

@@ -1,5 +1,9 @@
 import styles from "./Calendar.module.css"
 
+import { useState, useEffect } from "react";
+
+import axios from "axios"
+
 import { Swiper, SwiperSlide } from "swiper/react"
 
 import "swiper/css";
@@ -20,6 +24,22 @@ import CalendarSaudiArabiaFlag from "../assets/saudi_arabia_70_x_47.png"
 import { CalendarCard } from "../components/CalendarCard"
 
 export function Calendar() {
+    const [racesCalendar, setRacesCalendar] = useState([])
+
+    useEffect(() => {
+        async function fetch() {
+            const url = "https://eowieece7a1eri5.m.pipedream.net"
+
+            const response = await axios.get(url)
+
+            setRacesCalendar(response.data.racesCalendar)
+        }
+
+        fetch()
+    }, [])
+
+    console.log(racesCalendar)
+
     return (
         <div className={styles.CalendarBox}>
             <div className={styles.Calendar}>
@@ -35,95 +55,11 @@ export function Calendar() {
                                 disableOnInteraction: false,
                             }}
                         >
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarBahrainFlag}
-                                    countryName="BAHRAIN"
-                                    day="10"
-                                    mounth="APR"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarBahrainFlag}
-                                    countryName="BAHRAIN"
-                                    day="20"
-                                    mounth="APR"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarSpainFlag}
-                                    countryName="SPAIN"
-                                    day="24"
-                                    mounth="MAY"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarFranceFlag}
-                                    countryName="FRANCE"
-                                    day="31"
-                                    mounth="JUL"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarBelgiumFlag}
-                                    countryName="BELGIUM"
-                                    day="28"
-                                    mounth="AUG"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarItalyFlag}
-                                    countryName="ITALY"
-                                    day="04"
-                                    mounth="SEP"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarJapanFlag}
-                                    countryName="JAPAN"
-                                    day="11"
-                                    mounth="SEP"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarEuaFlag}
-                                    countryName="EUA"
-                                    day="13"
-                                    mounth="SEP"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarAustriaFlag}
-                                    countryName="AUSTRIA"
-                                    day="21"
-                                    mounth="SEP"
-                                />
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <CalendarCard
-                                    countryImage={CalendarSaudiArabiaFlag}
-                                    countryName="SAUDI ARABIA"
-                                    day="27"
-                                    mounth="SEP"
-                                />
-                            </SwiperSlide>
+                            {racesCalendar != [] && racesCalendar.map((race, index) => (
+                                <SwiperSlide key={index}>
+                                    <CalendarCard race={race} />
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
                     </>
                 </div>
