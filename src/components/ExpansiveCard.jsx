@@ -30,11 +30,7 @@ export function ExpansiveCard({ pilotName }) {
 
             const response = await axios.get(url)
 
-            if (!pilotName) {
-                setPilotInfo(response.data.pilotsInfo.maxVerstappen)
-            } else {
-                setPilotInfo(response.data.pilotsInfo[pilotsNames[pilotName]])
-            }
+            setPilotInfo(response.data.pilotsInfo[pilotsNames[pilotName]])
         }
 
         fetch()
