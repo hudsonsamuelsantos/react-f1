@@ -24,12 +24,6 @@ export function CalendarCard({ race }) {
         "DEFAULT": CalendarBahrainFlag
     }
 
-    const defaultInfosObj = {
-        "countryNameUppercase": "DEFAULT",
-        "day": "26",
-        "mounthAbbreviationUppercase": "APR"
-    }
-
     return (
         <div className={styles.Card}>
             <div className={styles.CountryBox}>

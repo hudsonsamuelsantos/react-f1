@@ -38,8 +38,6 @@ export function Calendar() {
         fetch()
     }, [])
 
-    console.log(racesCalendar)
-
     return (
         <div className={styles.CalendarBox}>
             <div className={styles.Calendar}>
