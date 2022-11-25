@@ -1,10 +1,8 @@
 import styles from "./Timeline.module.css"
 
-import BahrainFlag from "../assets/bahrain.png"
-import SpainFlag from "../assets/spain.png"
-import FranceFlag from "../assets/france.png"
-import BelguimFlag from "../assets/belgium.png"
-import ItalyFlag from "../assets/italy.png"
+import { useState, useEffect } from "react";
+
+import axios from "axios"
 
 import MaxVerstappenMD from "../assets/max_verstappen_md.png"
 
@@ -17,6 +15,22 @@ import { Footer } from "../components/Footer"
 import { Calendar } from "../components/Calendar";
 
 export function Timeline() {
+    const [racesCards, setracesCards] = useState([])
+
+    useEffect(() => {
+        async function fetch() {
+            const url = "https://eowieece7a1eri5.m.pipedream.net"
+
+            const response = await axios.get(url)
+
+            setracesCards(response.data.racesCards)
+        }
+
+        fetch()
+    }, [])
+
+    console.log(racesCards)
+
     return (
         <div className={styles.Timeline}>
             <header>
@@ -38,97 +52,15 @@ export function Timeline() {
                 </div>
 
                 <div className={styles.FirstCardsBox}>
-                    <Card
-                        title="TESTING"
-                        days="10 - 12"
-                        countryImage={BahrainFlag}
-                        countryName="Bahrain"
-                        mounth="APR"
-                        description="FORMULA 1 ARAMCO PRE-SEASON TESTING 2022"
-                    />
-
-                    <Card
-                        title="ROUND 1"
-                        days="20 - 22"
-                        countryImage={BahrainFlag}
-                        countryName="Bahrain"
-                        mounth="MAY"
-                        description="FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2022"
-                        isWithPilots
-                        firstPilotImage={MaxVerstappenMD}
-                        secondPilotImage={SergioPerezSM}
-                        thirdPilotImage={CharlesLeclercSM}
-                        firstPilotNameAbbreviation="VER"
-                        secondPilotNameAbbreviation="POR"
-                        thirdPilotNameAbbreviation="LEC"
-
-                    />
-
-                    <Card
-                        title="ROUND 1"
-                        days="24 - 26"
-                        countryImage={SpainFlag}
-                        countryName="Spain"
-                        mounth="MAY"
-                        description="FORMULA 1 PIRELLI GRAN PREMIO DE ESPAÑA 2022"
-                        isWithPilots
-                        firstPilotImage={MaxVerstappenMD}
-                        secondPilotImage={SergioPerezSM}
-                        thirdPilotImage={CharlesLeclercSM}
-                        firstPilotNameAbbreviation="VER"
-                        secondPilotNameAbbreviation="POR"
-                        thirdPilotNameAbbreviation="LEC"
-                    />
+                    <Card raceCard={racesCards[0]} ></Card>
+                    <Card raceCard={racesCards[1]} ></Card>
+                    <Card raceCard={racesCards[2]} ></Card>
                 </div>
 
                 <div className={styles.SecondCardsBox}>
-                    <Card
-                        title="ROUND 1"
-                        days="31 - 02"
-                        countryImage={FranceFlag}
-                        countryName="France"
-                        mounth="JUL"
-                        description="FORMULA 1 LENOVO GRAND PRIX DE FRANCE 2022"
-                        isWithPilots
-                        firstPilotImage={MaxVerstappenMD}
-                        secondPilotImage={SergioPerezSM}
-                        thirdPilotImage={CharlesLeclercSM}
-                        firstPilotNameAbbreviation="VER"
-                        secondPilotNameAbbreviation="POR"
-                        thirdPilotNameAbbreviation="LEC"
-                    />
-
-                    <Card
-                        title="ROUND 1"
-                        days="28 - 30"
-                        countryImage={BelguimFlag}
-                        countryName="Belgium"
-                        mounth="AUG"
-                        description="FORMULA 1 ROLEX BELGIAN GRAND PRIX 2022"
-                        isWithPilots
-                        firstPilotImage={MaxVerstappenMD}
-                        secondPilotImage={SergioPerezSM}
-                        thirdPilotImage={CharlesLeclercSM}
-                        firstPilotNameAbbreviation="VER"
-                        secondPilotNameAbbreviation="POR"
-                        thirdPilotNameAbbreviation="LEC"
-                    />
-
-                    <Card
-                        title="ROUND 1"
-                        days="04 - 06"
-                        countryImage={ItalyFlag}
-                        countryName="Italy"
-                        mounth="SEP"
-                        description="FORMULA 1 PIRELLI GRAN PREMIO D&#8217;ITALIA 2022"
-                        isWithPilots
-                        firstPilotImage={MaxVerstappenMD}
-                        secondPilotImage={SergioPerezSM}
-                        thirdPilotImage={CharlesLeclercSM}
-                        firstPilotNameAbbreviation="VER"
-                        secondPilotNameAbbreviation="POR"
-                        thirdPilotNameAbbreviation="LEC"
-                    />
+                    <Card raceCard={racesCards[3]} ></Card>
+                    <Card raceCard={racesCards[4]} ></Card>
+                    <Card raceCard={racesCards[5]} ></Card>
                 </div>
 
                 <Calendar />

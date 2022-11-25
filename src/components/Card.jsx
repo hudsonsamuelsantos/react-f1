@@ -7,30 +7,49 @@ import ChevronRight from "../assets/chevron_right.png"
 import RectangleRed from "../assets/rectangle_red.png"
 import RectangleBlue from "../assets/rectangle_blue.png"
 
+import BahrainFlag from "../assets/bahrain.png"
+import SpainFlag from "../assets/spain.png"
+import FranceFlag from "../assets/france.png"
+import BelguimFlag from "../assets/belgium.png"
+import ItalyFlag from "../assets/italy.png"
+
+import MaxVerstappenMD from "../assets/max_verstappen_md.png"
+
+import SergioPerezSM from "../assets/segio_perez_sm.png"
+import CharlesLeclercSM from "../assets/charles_leclerc_sm.png"
+
 import CardPilotBackgroundSmall from "../assets/card_pilot_background_small.png"
 import CardPilotBackgroundLarge from "../assets/card_pilot_background_large.png"
 import CardImageCar from "../assets/card-image-car.png"
 
-export function Card(props) {
+export function Card({ raceCard }) {
+    const countryFlagsImages = {
+        "Bahrain": BahrainFlag,
+        "Spain": SpainFlag,
+        "France": FranceFlag,
+        "Belgium": BelguimFlag,
+        "Italy": ItalyFlag
+    }
+
     return (
         <div className={styles.Card}>
-            <span className={props.isWithPilots ? styles.CardWithPilotsTitle : styles.CardWithoutPilotsTitle}>
-                {props.title}
+            <span className={raceCard.isWithPilots ? styles.CardWithPilotsTitle : styles.CardWithoutPilotsTitle}>
+                {raceCard.titleUppercase}
             </span>
 
-            <div className={props.isWithPilots ? styles.CardWithPilotsContentBox : styles.CardWithoutPilotsContentBox}>
+            <div className={raceCard.isWithPilots ? styles.CardWithPilotsContentBox : styles.CardWithoutPilotsContentBox}>
                 <div className={styles.CardContentText}>
                     <div className={styles.CardDateAndCountryBox}>
                         <div className={styles.DaysAndCountry}>
                             <span className={styles.Days}>
-                                {props.days}
+                                {raceCard.days}
                             </span>
-                            <img src={props.countryImage} />
+                            <img src={countryFlagsImages[raceCard.countryName]} />
                         </div>
 
                         <div className={styles.MounthBox}>
                             <span className={styles.Mounth}>
-                                {props.mounth}
+                                {raceCard.mounth}
                             </span>
                             <img src={Flag} />
                         </div>
@@ -38,7 +57,7 @@ export function Card(props) {
                         <div className={styles.CardDescriptionBox}>
                             <div className={styles.CountryNameBox}>
                                 <span className={styles.CountryName}>
-                                    {props.countryName}
+                                    {raceCard.countryName}
                                 </span>
                                 <div className={styles.ChevronRightIcon}>
                                     <img src={ChevronRight} />
@@ -46,16 +65,16 @@ export function Card(props) {
                             </div>
 
                             <span className={styles.Description}>
-                                {props.description}
+                                {raceCard.descriptionUppercase}
                             </span>
                         </div>
                     </div>
                 </div>
 
-                {props.isWithPilots
+                {raceCard.isWithPilots
                     ? <div className={styles.CardPilotsBox}>
                         <div className={styles.SecondPilotBox}>
-                            <img src={props.secondPilotImage} className={styles.SmallPilotImage} />
+                            <img src={SergioPerezSM} className={styles.SmallPilotImage} />
 
                             <div className={styles.SecondPilotInfo}>
                                 <span className={styles.PilotNameAbbreviation}>
@@ -64,7 +83,7 @@ export function Card(props) {
                                         <img src={RectangleRed} className={styles.PositionRetactangles} />
                                     </div>
 
-                                    {props.secondPilotNameAbbreviation}
+                                    POR
                                 </span>
                             </div>
 
@@ -72,7 +91,7 @@ export function Card(props) {
                         </div>
 
                         <div className={styles.FirstPilotBox}>
-                            <img src={props.firstPilotImage} className={styles.LargePilotImage} />
+                            <img src={MaxVerstappenMD} className={styles.LargePilotImage} />
 
                             <div className={styles.FirstPilotInfo}>
                                 <div className={styles.PositionRetactanglesBox}>
@@ -80,7 +99,7 @@ export function Card(props) {
                                 </div>
 
                                 <span className={styles.PilotNameAbbreviation}>
-                                    {props.firstPilotNameAbbreviation}
+                                    VER
                                 </span>
                             </div>
 
@@ -88,7 +107,7 @@ export function Card(props) {
                         </div>
 
                         <div className={styles.ThirdPilotBox}>
-                            <img src={props.thirdPilotImage} className={styles.SmallPilotImage} />
+                            <img src={CharlesLeclercSM} className={styles.SmallPilotImage} />
 
                             <div className={styles.ThirdPilotInfo}>
                                 <div className={styles.PositionRetactanglesBox}>
@@ -98,7 +117,7 @@ export function Card(props) {
                                 </div>
 
                                 <span className={styles.PilotNameAbbreviation}>
-                                    {props.thirdPilotNameAbbreviation}
+                                    LEC
                                 </span>
                             </div>
 
