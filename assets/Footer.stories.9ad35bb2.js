@@ -1,0 +1,2 @@
+import{w as o}from"./index.cc51a50f.js";import{F as t}from"./Footer.6ac83cfa.js";import"./index.58b849fe.js";import"./iframe.f036e802.js";import"./jsx-runtime.e91f734f.js";import"./make-decorator.a0c2bbc3.js";const a={title:"Components/Footer",component:t,decorators:[o]},n={},c=["Default"];export{n as Default,c as __namedExportsOrder,a as default};
+//# sourceMappingURL=Footer.stories.9ad35bb2.js.map

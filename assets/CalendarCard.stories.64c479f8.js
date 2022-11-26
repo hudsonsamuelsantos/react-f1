@@ -1,0 +1,2 @@
+import{C as a}from"./CalendarCard.d9eced67.js";import"./jsx-runtime.e91f734f.js";import"./index.58b849fe.js";import"./iframe.f036e802.js";const n={title:"Components/CalendarCard",component:a,args:{race:{countryNameUppercase:"DEFAULT",day:"26",mounthAbbreviationUppercase:"APR"}}},p={},s=["Default"];export{p as Default,s as __namedExportsOrder,n as default};
+//# sourceMappingURL=CalendarCard.stories.64c479f8.js.map
