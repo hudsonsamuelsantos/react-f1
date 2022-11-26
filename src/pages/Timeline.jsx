@@ -15,7 +15,7 @@ import { Footer } from "../components/Footer"
 import { Calendar } from "../components/Calendar";
 
 export function Timeline() {
-    const [racesCards, setracesCards] = useState([])
+    const [racesCards, setracesCards] = useState(null)
 
     useEffect(() => {
         async function fetch() {
@@ -28,8 +28,6 @@ export function Timeline() {
 
         fetch()
     }, [])
-
-    console.log(racesCards)
 
     return (
         <div className={styles.Timeline}>
@@ -51,17 +49,21 @@ export function Timeline() {
                     </span>
                 </div>
 
-                <div className={styles.FirstCardsBox}>
-                    <Card raceCard={racesCards[0]} ></Card>
-                    <Card raceCard={racesCards[1]} ></Card>
-                    <Card raceCard={racesCards[2]} ></Card>
-                </div>
+                {racesCards != null &&
+                    <>
+                        <div className={styles.FirstCardsBox}>
+                            <Card raceCard={racesCards[0]} ></Card>
+                            <Card raceCard={racesCards[1]} ></Card>
+                            <Card raceCard={racesCards[2]} ></Card>
+                        </div>
 
-                <div className={styles.SecondCardsBox}>
-                    <Card raceCard={racesCards[3]} ></Card>
-                    <Card raceCard={racesCards[4]} ></Card>
-                    <Card raceCard={racesCards[5]} ></Card>
-                </div>
+                        <div className={styles.SecondCardsBox}>
+                            <Card raceCard={racesCards[3]} ></Card>
+                            <Card raceCard={racesCards[4]} ></Card>
+                            <Card raceCard={racesCards[5]} ></Card>
+                        </div>
+                    </>
+                }
 
                 <Calendar />
 

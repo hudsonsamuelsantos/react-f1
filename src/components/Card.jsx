@@ -31,6 +31,8 @@ export function Card({ raceCard }) {
         "Italy": ItalyFlag
     }
 
+    console.log(raceCard)
+
     return (
         <div className={styles.Card}>
             <span className={raceCard.isWithPilots ? styles.CardWithPilotsTitle : styles.CardWithoutPilotsTitle}>
