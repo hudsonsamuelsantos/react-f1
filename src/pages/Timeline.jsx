@@ -4,11 +4,6 @@ import { useState, useEffect } from "react";
 
 import axios from "axios"
 
-import MaxVerstappenMD from "../assets/max_verstappen_md.png"
-
-import SergioPerezSM from "../assets/segio_perez_sm.png"
-import CharlesLeclercSM from "../assets/charles_leclerc_sm.png"
-
 import { Header } from "../components/Header"
 import { Card } from "../components/Card"
 import { Footer } from "../components/Footer"
